@@ -1,4 +1,4 @@
-const notation = () => { 
+const getNumbers = () => { 
     let number1 = +prompt('Введите первое число:');
     let number2 = +prompt('Введите второе число:');
     let isNumber = typeof number1 === 'number' && typeof number2 === 'number';
@@ -11,4 +11,4 @@ const notation = () => {
         return;
     }
 }
-notation();
+getNumbers();
