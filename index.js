@@ -1,20 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const calculation = () => { 
+const getNumbers = () => { 
     let number1 = +prompt('Введите первое число:');
     let number2 = +prompt('Введите второе число:');
     let isNumber = typeof number1 === 'number' && typeof number2 === 'number';
@@ -27,4 +11,4 @@ const calculation = () => {
         return;
     }
 }
-calculation();
+getNumbers();
