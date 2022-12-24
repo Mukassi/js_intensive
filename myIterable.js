@@ -25,4 +25,4 @@ myIterable[Symbol.iterator] = function (){
         }
     }
 }
-
+// сложность по Big O: O(1)
