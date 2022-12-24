@@ -14,3 +14,4 @@ function selectFromInterval(arr, firstInt, secondInt) {
         }
     });
 }
+// сложность по Big O: O(n)
