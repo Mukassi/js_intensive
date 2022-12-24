@@ -1,12 +1,13 @@
-function makeObjectDeepCopy(obj){
-    let newObj = {};
-    if (typeof obj !== 'object') {
-        return obj;
+function makeObjectDeepCopy(value){
+    let newCopy = Array.isArray(value) ? [] : {};
+    if (typeof value !== 'object' || value === null) {
+        return value;
     };
     Object
-        .entries(obj)
+        .entries(value)
         .map(elem => {
-            newObj[elem[0]] = makeObjectDeepCopy(elem[1])
+                newCopy[elem[0]] = makeObjectDeepCopy(elem[1])
         })
-    return newObj;
+    return newCopy;
 }
+//сложность по Big O: O(n^2)
